@@ -8,4 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Show Secret from GitHub Secrets
-        run: echo " Secret is ${{ secrets.MY_SECRET_PASSWORD }}"
+        run: echo "🔐 Secret is ${{ secrets.MY_SECRET_PASSWORD }}"
+
