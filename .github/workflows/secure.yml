@@ -1,0 +1,9 @@
+name: Secure Pipeline Test
+on: [push]
+jobs: 
+   access-secret:
+   runs-on: ubuntu-latest
+   steps:
+     -name: Show Secret from GitHub Secrets
+     run: echo "Secret is $ {{secrets.MY_SECRET_PASSWORD}}"
+     
